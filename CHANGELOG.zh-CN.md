@@ -15,6 +15,28 @@ tag: vVERSION
 
 ---
 
+## 5.20.3
+
+`2024-08-26`
+
+- 🐞 重构 Typography 在使用 css 原生省略时的检查逻辑，以解决屏幕缩放等情况下的精度问题。[#50514](https://github.com/ant-design/ant-design/pull/50514) [@zombieJ](https://github.com/zombieJ)
+- 🐞 修复 ColorPicker 组件在面板上不拖拽直接点击的时候，`onChangeComplete` 返回值不正确的问题。[#50501](https://github.com/ant-design/ant-design/pull/50501) [@zombieJ](https://github.com/zombieJ)
+- 🐞 修复 FloatButton.Group 在受控模式下 React 会警告递归更新的问题。[#50500](https://github.com/ant-design/ant-design/pull/50500) [@zombieJ](https://github.com/zombieJ)
+
+## 5.20.2
+
+`2024-08-19`
+
+- 💄 修复 InputNumber 没有控件的后缀样式问题。[#50450](https://github.com/ant-design/ant-design/pull/50450) [@coding-ice](https://github.com/coding-ice)
+- 🆕 Form `rule.message` 支持通过 `\\${}` 跳过变量替换。[#50412](https://github.com/ant-design/ant-design/pull/50412) [@zombieJ](https://github.com/zombieJ)
+- 🐞 修复了 FloatButton 组件当 shape=“square” 时，并且在菜单模式下，菜单弹出时 trigger 元素圆角缺失的问题。[#50408](https://github.com/ant-design/ant-design/pull/50408) [@li-jia-nan](https://github.com/li-jia-nan)
+- 🐞 修复 Upload.Dragger 拖拽上传文件夹时不工作问题。[#50394](https://github.com/ant-design/ant-design/pull/50394) [@huiliangShen](https://github.com/huiliangShen)
+- 🐞 修复 Select 指定 `getPopcontainer={node=node.parentNode}` 时箭头图标 hover 后会消失的问题。[#50382](https://github.com/ant-design/ant-design/pull/50382) [@afc163](https://github.com/afc163)
+- 🐞 修复 Popover 设置 `arrow.pointAtCenter` 属性时箭头未对齐错误。[#50260](https://github.com/ant-design/ant-design/pull/50260) [@Wxh16144](https://github.com/Wxh16144)
+- 📖 Transfer 补充俄罗斯语和乌克兰语本地化文案。[#50429](https://github.com/ant-design/ant-design/pull/50429) [@alexlag](https://github.com/alexlag)
+- TypeScript
+  - 🤖 将 Table 部分泛型约束 object 回滚为 any，以减少 [#50351](https://github.com/ant-design/ant-design/pull/50351) 造成的 break change。[#50372](https://github.com/ant-design/ant-design/pull/50372) [@crazyair](https://github.com/crazyair)
+
 ## 5.20.1
 
 `2024-08-11`
@@ -1668,7 +1690,7 @@ tag: vVERSION
 - 🐞 修复 InputNumber `disabled` 时字体高亮不正确的问题。[#41167](https://github.com/ant-design/ant-design/pull/41167) [@Yuiai01](https://github.com/Yuiai01)
 - 🐞 修复 Anchor 动态添加 `items` 后高亮失效问题。[#40743](https://github.com/ant-design/ant-design/pull/40743) [@zqran](https://github.com/zqran)
 - 🛠 更新 Mentions 底层依赖，支持 `transform scale` 下对齐。[#41160](https://github.com/ant-design/ant-design/pull/41160) [@MuxinFeng](https://github.com/MuxinFeng)
-- 🐞 修复 Form 手工调用 `validateFields` 时，`hasFeedback` 对成功态不生效的问题。[#41116](https://github.com/ant-design/ant-design/pull/41116) [@kiner-tang](https://github.com/kiner-tang)
+- 🐞 修复 Form 手动调用 `validateFields` 时，`hasFeedback` 对成功态不生效的问题。[#41116](https://github.com/ant-design/ant-design/pull/41116) [@kiner-tang](https://github.com/kiner-tang)
 - 🐞 修复 Cascader 在悬浮至叶子节点时，展开面板没有关闭的问题。[#41134](https://github.com/ant-design/ant-design/issues/41134)
 - 🐞 修复 Popconfirm 使用 `Promise` 关闭时再次打开仍然是 `loading` 状态的问题。[#41121](https://github.com/ant-design/ant-design/pull/41121)
 - 🐞 修复 Upload 在 React 18 下 `onChange` 有时数据不正确的问题。[#41082](https://github.com/ant-design/ant-design/pull/41082) [@li-jia-nan](https://github.com/li-jia-nan)
